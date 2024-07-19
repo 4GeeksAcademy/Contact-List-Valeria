@@ -6,7 +6,6 @@ import { AddContact } from "./views/addContact.jsx";
 import { UpdateContact } from "./views/updateContact.jsx";
 
 import injectContext from "./store/appContext";
-import { Footer } from "./component/footer";
 
 //create your first component
 const Layout = () => {
@@ -23,7 +22,6 @@ const Layout = () => {
 					<Route path="/updateContact" element={<UpdateContact />} />
 					<Route path="*" element={<h1>Not found!</h1>} />
 				</Routes>
-				<Footer />
 			</BrowserRouter>
 		</div>
 	);
